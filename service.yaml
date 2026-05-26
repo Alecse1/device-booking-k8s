@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: device-booking-service
+spec:
+  selector:
+    app: device-booking-app
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: NodePort
