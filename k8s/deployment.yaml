@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: your-dockerhub/device-booking-app:latest
+          image: device-booking-app:0
           ports:
-            - containerPort: 8080
+            - containerPort: 8082
