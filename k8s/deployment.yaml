@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: device-booking-app
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -14,6 +15,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: YOUR_DOCKERHUB/device-booking-app:latest
+          image: your-dockerhub/device-booking-app:latest
           ports:
             - containerPort: 8080
