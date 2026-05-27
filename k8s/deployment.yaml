@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: alecse1/device-booking-app:57
+          image: alecse1/device-booking-app:58
           ports:
             - containerPort: 8082
