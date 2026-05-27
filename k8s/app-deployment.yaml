@@ -23,8 +23,6 @@ spec:
 
           image: device-booking-app:0
 
-          imagePullPolicy: Never
-
           ports:
             - containerPort: 8080
 

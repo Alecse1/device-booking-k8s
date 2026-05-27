@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: device-booking-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: device-booking-app
+  template:
+    metadata:
+      labels:
+        app: device-booking-app
+    spec:
+      containers:
+        - name: app
+          image: alecse1/device-booking-app:58
+          ports:
+            - containerPort: 8082
